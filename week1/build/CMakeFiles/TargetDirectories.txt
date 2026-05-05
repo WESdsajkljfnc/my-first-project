@@ -1,0 +1,3 @@
+/home/r0bot/week1/build/CMakeFiles/hello.dir
+/home/r0bot/week1/build/CMakeFiles/edit_cache.dir
+/home/r0bot/week1/build/CMakeFiles/rebuild_cache.dir
