@@ -19,7 +19,8 @@
         原来没有把buid建在工作空间根目录，所以找不到文件
   2. 不理解为什么不直接把工作空间（包含源码，README.md）分享给别人，非要用git：
         问AI，是因为git可以记录每一次commit的快照，随时可以查看原来的版本
-  3. camke报错![报错情况](weeek1/images/3.png)：
+  3. camke报错
+        ![报错情况](week1/images/3.png)：
         发现是由于我把工作空间的名字改为了Week1，而缓存文件在旧的data/build目录下，现在是Week1/  build，   路径不匹配,在build目录下终端输入rm -rf CMakeCache.txt CMakeFiles,把旧文件删掉就行了
   4. github注册相关问题：
         1.进不去：用stea++加速器就能进去了
