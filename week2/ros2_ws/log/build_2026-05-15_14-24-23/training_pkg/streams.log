@@ -1,0 +1,28 @@
+[0.005s] Invoking command in '/home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg -- -j32 -l32
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.038s] [ 50%] Built target listener
+[0.041s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[2.126s] [100%] [32m[1mLinking CXX executable talker[0m
+[2.233s] [100%] Built target talker
+[2.241s] Invoked command in '/home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg -- -j32 -l32
+[2.246s] Invoking command in '/home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg
+[2.251s] -- Install configuration: ""
+[2.251s] -- Installing: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/lib/training_pkg/talker
+[2.252s] -- Set runtime path of "/home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/lib/training_pkg/talker" to ""
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/lib/training_pkg/listener
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/ament_index/resource_index/package_run_dependencies/training_pkg
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/ament_index/resource_index/parent_prefix_path/training_pkg
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/environment/ament_prefix_path.sh
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/environment/ament_prefix_path.dsv
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/environment/path.sh
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/environment/path.dsv
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/local_setup.bash
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/local_setup.sh
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/local_setup.zsh
+[2.253s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/local_setup.dsv
+[2.253s] -- Installing: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/package.dsv
+[2.254s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/ament_index/resource_index/packages/training_pkg
+[2.254s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/cmake/training_pkgConfig.cmake
+[2.254s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/cmake/training_pkgConfig-version.cmake
+[2.254s] -- Up-to-date: /home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg/share/training_pkg/package.xml
+[2.255s] Invoked command in '/home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg
