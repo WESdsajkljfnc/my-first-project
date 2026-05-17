@@ -1,4 +1,0 @@
-Invoking command in '/home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg -- -j32 -l32
-Invoked command in '/home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg -- -j32 -l32
-Invoking command in '/home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg
-Invoked command in '/home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/r0bot/桌面/course/week2/ros2_ws/build/training_pkg
