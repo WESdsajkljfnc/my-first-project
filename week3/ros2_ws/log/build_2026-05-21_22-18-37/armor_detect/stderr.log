@@ -1,8 +1,0 @@
-[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
-[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:44:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
-   44 |     Mat kernel_close = getStructuringElement[34m[K([m[KMORPH_ELLIPSE, Size(5,5)[01;31m[K;[m[K // 原来7x7，加大到9x9
-      |                                             [34m[K~[m[K                        [01;31m[K^[m[K
-      |                                                                      [32m[K)[m[K
-gmake[2]: *** [CMakeFiles/step4_lightbars.dir/build.make:76：CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:169：CMakeFiles/step4_lightbars.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

@@ -1,9 +1,0 @@
-[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/video_processor.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
-[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/video_processor.cpp:35:20:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kcap.cv::VideoCapture::operator>>(frame)[m[K’ from ‘[01m[Kcv::VideoCapture[m[K’ to ‘[01m[Kbool[m[K’
-   35 |         while ([01;31m[Kcap >> frame[m[K) {
-      |                [01;31m[K~~~~^~~~~~~~[m[K
-      |                    [01;31m[K|[m[K
-      |                    [01;31m[Kcv::VideoCapture[m[K
-gmake[2]: *** [CMakeFiles/video_processor.dir/build.make:76：CMakeFiles/video_processor.dir/src/video_processor.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:177：CMakeFiles/video_processor.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

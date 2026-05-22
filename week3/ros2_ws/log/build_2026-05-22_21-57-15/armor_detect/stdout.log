@@ -1,7 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target armor_detector_lib[0m
-[ 12%] Built target step4_lightbars
-[ 37%] Built target hsv_check
-[ 37%] Built target video_player
-[ 50%] Built target color_split
-[ 68%] [32mBuilding CXX object CMakeFiles/armor_detector_lib.dir/src/armor_detector.cpp.o[0m
-[ 68%] Built target hsv_scan

@@ -1,9 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target hsv_check[0m
-[35m[1mConsolidate compiler generated dependencies of target step4_lightbars[0m
-[35m[1mConsolidate compiler generated dependencies of target hsv_scan[0m
-[ 12%] [32mBuilding CXX object CMakeFiles/color_split.dir/src/color_split.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/hsv_check.dir/src/hsv_check.cpp.o[0m
-[ 50%] Built target step4_lightbars
-[ 75%] Built target hsv_scan
-[ 87%] [32m[1mLinking CXX executable color_split[0m
-[ 87%] Built target color_split

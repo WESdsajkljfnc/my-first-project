@@ -1,6 +1,0 @@
-[  6%] [32mBuilding CXX object CMakeFiles/armor_detector_lib.dir/src/armor_detector.cpp.o[0m
-[ 18%] Built target step4_lightbars
-[ 56%] Built target hsv_check
-[ 56%] Built target color_split
-[ 56%] Built target hsv_scan
-[ 68%] Built target video_player
