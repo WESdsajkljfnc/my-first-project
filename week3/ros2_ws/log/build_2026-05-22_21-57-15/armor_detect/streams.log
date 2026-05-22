@@ -1,0 +1,27 @@
+[0.006s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target armor_detector_lib[0m
+[0.038s] [ 12%] Built target step4_lightbars
+[0.039s] [ 37%] Built target hsv_check
+[0.039s] [ 37%] Built target video_player
+[0.039s] [ 50%] Built target color_split
+[0.039s] [ 68%] [32mBuilding CXX object CMakeFiles/armor_detector_lib.dir/src/armor_detector.cpp.o[0m
+[0.039s] [ 68%] Built target hsv_scan
+[0.583s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:[m[K In member function ‘[01m[Kstd::vector<ArmorResult> ArmorDetector::detect(const cv::Mat&)[m[K’:
+[0.583s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:94:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KMat[m[K’
+[0.583s]    94 |     [01;31m[KMat[m[K hsv;
+[0.583s]       |     [01;31m[K^~~[m[K
+[0.587s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:95:21:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv[m[K’ was not declared in this scope
+[0.587s]    95 |     cvtColor(frame, [01;31m[Khsv[m[K, COLOR_BGR2HSV);
+[0.587s]       |                     [01;31m[K^~~[m[K
+[0.592s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:[m[K In lambda function:
+[0.592s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:135:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kresults[m[K’ was not declared in this scope
+[0.592s]   135 |                 [01;31m[Kresults[m[K.push_back({color, corners});
+[0.592s]       |                 [01;31m[K^~~~~~~[m[K
+[0.594s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:[m[K In member function ‘[01m[Kstd::vector<ArmorResult> ArmorDetector::detect(const cv::Mat&)[m[K’:
+[0.594s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:142:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kresults[m[K’ was not declared in this scope
+[0.594s]   142 |     return [01;31m[Kresults[m[K;
+[0.594s]       |            [01;31m[K^~~~~~~[m[K
+[0.814s] gmake[2]: *** [CMakeFiles/armor_detector_lib.dir/build.make:76：CMakeFiles/armor_detector_lib.dir/src/armor_detector.cpp.o] 错误 1
+[0.815s] gmake[1]: *** [CMakeFiles/Makefile2:151：CMakeFiles/armor_detector_lib.dir/all] 错误 2
+[0.815s] gmake: *** [Makefile:146：all] 错误 2
+[0.817s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32

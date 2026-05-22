@@ -1,0 +1,42 @@
+[0.006s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[0.030s] [35m[1mConsolidate compiler generated dependencies of target armor_detector_lib[0m
+[0.038s] [ 25%] [32mBuilding CXX object CMakeFiles/armor_detector_lib.dir/src/armor_detector.cpp.o[0m
+[0.038s] [ 31%] Built target color_split
+[0.038s] [ 31%] Built target hsv_check
+[0.039s] [ 68%] Built target hsv_scan
+[0.039s] [ 68%] Built target video_player
+[0.039s] [ 68%] Built target step4_lightbars
+[0.923s] [ 75%] [32m[1mLinking CXX static library libarmor_detector_lib.a[0m
+[0.943s] [ 75%] Built target armor_detector_lib
+[0.950s] [35m[1mConsolidate compiler generated dependencies of target diagnose[0m
+[0.950s] [35m[1mConsolidate compiler generated dependencies of target video_processor[0m
+[0.958s] [ 81%] [32m[1mLinking CXX executable diagnose[0m
+[0.959s] [ 87%] [32m[1mLinking CXX executable video_processor[0m
+[1.164s] [ 93%] Built target video_processor
+[1.174s] [100%] Built target diagnose
+[1.182s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[1.188s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect
+[1.192s] -- Install configuration: ""
+[1.192s] -- Installing: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/lib/armor_detect/video_processor
+[1.192s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/lib/armor_detect/color_split
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/lib/armor_detect/step4_lightbars
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/lib/armor_detect/hsv_check
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/lib/armor_detect/hsv_scan
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/lib/armor_detect/video_player
+[1.193s] -- Installing: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/lib/armor_detect/diagnose
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/ament_index/resource_index/package_run_dependencies/armor_detect
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/ament_index/resource_index/parent_prefix_path/armor_detect
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/environment/ament_prefix_path.sh
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/environment/ament_prefix_path.dsv
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/environment/path.sh
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/environment/path.dsv
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/local_setup.bash
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/local_setup.sh
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/local_setup.zsh
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/local_setup.dsv
+[1.193s] -- Installing: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/package.dsv
+[1.193s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/ament_index/resource_index/packages/armor_detect
+[1.194s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/cmake/armor_detectConfig.cmake
+[1.194s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/cmake/armor_detectConfig-version.cmake
+[1.194s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/package.xml
+[1.194s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect

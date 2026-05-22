@@ -1,0 +1,15 @@
+[0.006s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[0.030s] [35m[1mConsolidate compiler generated dependencies of target step4_lightbars[0m
+[0.038s] [ 25%] Built target hsv_check
+[0.038s] [ 50%] Built target hsv_scan
+[0.039s] [ 62%] [32mBuilding CXX object CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o[0m
+[0.039s] [ 87%] Built target color_split
+[0.571s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[0.572s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:44:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[0.572s]    44 |     Mat kernel_close = getStructuringElement[34m[K([m[KMORPH_ELLIPSE, Size(5,5)[01;31m[K;[m[K // 原来7x7，加大到9x9
+[0.572s]       |                                             [34m[K~[m[K                        [01;31m[K^[m[K
+[0.572s]       |                                                                      [32m[K)[m[K
+[0.781s] gmake[2]: *** [CMakeFiles/step4_lightbars.dir/build.make:76：CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o] 错误 1
+[0.781s] gmake[1]: *** [CMakeFiles/Makefile2:169：CMakeFiles/step4_lightbars.dir/all] 错误 2
+[0.782s] gmake: *** [Makefile:146：all] 错误 2
+[0.784s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32

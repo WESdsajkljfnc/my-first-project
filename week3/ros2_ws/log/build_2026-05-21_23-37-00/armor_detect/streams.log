@@ -1,0 +1,23 @@
+[0.006s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target step4_lightbars[0m
+[0.038s] [ 50%] Built target color_split
+[0.038s] [ 50%] Built target hsv_check
+[0.038s] [ 75%] Built target hsv_scan
+[0.038s] [ 87%] [32mBuilding CXX object CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o[0m
+[0.576s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:[m[K In lambda function:
+[0.576s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:75:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_width[m[K’ was not declared in this scope
+[0.576s]    75 |         [01;31m[Kmin_width[m[K  = 4.0f;     // ← 新增：宽度过滤
+[0.576s]       |         [01;31m[K^~~~~~~~~[m[K
+[0.578s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:97:15:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kfloat shortSide[m[K’
+[0.578s]    97 |         float [01;31m[KshortSide[m[K = min(w, h);
+[0.578s]       |               [01;31m[K^~~~~~~~~[m[K
+[0.578s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:93:15:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat shortSide[m[K’ previously declared here
+[0.578s]    93 |         float [01;36m[KshortSide[m[K = min(w, h);
+[0.578s]       |               [01;36m[K^~~~~~~~~[m[K
+[0.580s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:98:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_width[m[K’ was not declared in this scope
+[0.580s]    98 |         if (shortSide < [01;31m[Kmin_width[m[K) continue;   // ← 新增：宽度过滤
+[0.580s]       |                         [01;31m[K^~~~~~~~~[m[K
+[0.791s] gmake[2]: *** [CMakeFiles/step4_lightbars.dir/build.make:76：CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o] 错误 1
+[0.792s] gmake[1]: *** [CMakeFiles/Makefile2:169：CMakeFiles/step4_lightbars.dir/all] 错误 2
+[0.792s] gmake: *** [Makefile:146：all] 错误 2
+[0.794s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32

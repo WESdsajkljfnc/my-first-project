@@ -1,0 +1,25 @@
+[0.006s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[0.037s] [  6%] [32mBuilding CXX object CMakeFiles/armor_detector_lib.dir/src/armor_detector.cpp.o[0m
+[0.038s] [ 18%] Built target step4_lightbars
+[0.038s] [ 56%] Built target hsv_check
+[0.038s] [ 56%] Built target color_split
+[0.038s] [ 56%] Built target hsv_scan
+[0.038s] [ 68%] Built target video_player
+[0.571s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:8:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KArmorDetector::ArmorDetector()[m[K’
+[0.571s]     8 | [01;31m[KArmorDetector[m[K::ArmorDetector() {
+[0.571s]       | [01;31m[K^~~~~~~~~~~~~[m[K
+[0.571s] In file included from [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:1[m[K:
+[0.571s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/include/armor_detect/armor_detector.h:19:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KArmorDetector::ArmorDetector(ArmorDetector&&)[m[K’
+[0.571s]    19 | class [01;36m[KArmorDetector[m[K {
+[0.571s]       |       [01;36m[K^~~~~~~~~~~~~[m[K
+[0.571s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/include/armor_detect/armor_detector.h:19:7:[m[K [01;36m[Knote: [m[K                ‘[01m[KArmorDetector::ArmorDetector(const ArmorDetector&)[m[K’
+[0.571s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/include/armor_detect/armor_detector.h:23:5:[m[K [01;36m[Knote: [m[K                ‘[01m[KArmorDetector::ArmorDetector(ArmorDetector::Mode)[m[K’
+[0.571s]    23 |     [01;36m[KArmorDetector[m[K(Mode mode = VIDEO);  // 默认视频模式
+[0.571s]       |     [01;36m[K^~~~~~~~~~~~~[m[K
+[0.571s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/include/armor_detect/armor_detector.h:19:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ArmorDetector[m[K’ defined here
+[0.571s]    19 | class [01;36m[KArmorDetector[m[K {
+[0.572s]       |       [01;36m[K^~~~~~~~~~~~~[m[K
+[0.801s] gmake[2]: *** [CMakeFiles/armor_detector_lib.dir/build.make:76：CMakeFiles/armor_detector_lib.dir/src/armor_detector.cpp.o] 错误 1
+[0.801s] gmake[1]: *** [CMakeFiles/Makefile2:151：CMakeFiles/armor_detector_lib.dir/all] 错误 2
+[0.801s] gmake: *** [Makefile:146：all] 错误 2
+[0.803s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32

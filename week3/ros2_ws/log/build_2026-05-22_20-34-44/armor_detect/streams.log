@@ -1,0 +1,19 @@
+[0.006s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[0.037s] [ 22%] Built target color_split
+[0.037s] [ 22%] Built target hsv_check
+[0.037s] [ 33%] Built target armor_detector_lib
+[0.037s] [ 50%] [32mBuilding CXX object CMakeFiles/step5_armor.dir/src/step5_armor.cpp.o[0m
+[0.037s] [ 50%] Built target video_player
+[0.037s] [ 61%] Built target step4_lightbars
+[0.038s] [ 72%] Built target hsv_scan
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target diagnose[0m
+[0.050s] [ 83%] Built target video_processor
+[0.051s] [ 94%] Built target diagnose
+[0.925s] [100%] [32m[1mLinking CXX executable step5_armor[0m
+[0.982s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.983s] (.text+0x1b): undefined reference to `main'
+[0.986s] collect2: error: ld returned 1 exit status
+[0.988s] gmake[2]: *** [CMakeFiles/step5_armor.dir/build.make:151：step5_armor] 错误 1
+[0.988s] gmake[1]: *** [CMakeFiles/Makefile2:309：CMakeFiles/step5_armor.dir/all] 错误 2
+[0.988s] gmake: *** [Makefile:146：all] 错误 2
+[0.990s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32

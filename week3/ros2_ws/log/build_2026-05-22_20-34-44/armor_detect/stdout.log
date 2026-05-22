@@ -1,0 +1,11 @@
+[ 22%] Built target color_split
+[ 22%] Built target hsv_check
+[ 33%] Built target armor_detector_lib
+[ 50%] [32mBuilding CXX object CMakeFiles/step5_armor.dir/src/step5_armor.cpp.o[0m
+[ 50%] Built target video_player
+[ 61%] Built target step4_lightbars
+[ 72%] Built target hsv_scan
+[35m[1mConsolidate compiler generated dependencies of target diagnose[0m
+[ 83%] Built target video_processor
+[ 94%] Built target diagnose
+[100%] [32m[1mLinking CXX executable step5_armor[0m

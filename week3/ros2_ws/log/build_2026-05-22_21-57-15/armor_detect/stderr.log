@@ -1,0 +1,18 @@
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:[m[K In member function ‘[01m[Kstd::vector<ArmorResult> ArmorDetector::detect(const cv::Mat&)[m[K’:
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:94:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KMat[m[K’
+   94 |     [01;31m[KMat[m[K hsv;
+      |     [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:95:21:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv[m[K’ was not declared in this scope
+   95 |     cvtColor(frame, [01;31m[Khsv[m[K, COLOR_BGR2HSV);
+      |                     [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:[m[K In lambda function:
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:135:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kresults[m[K’ was not declared in this scope
+  135 |                 [01;31m[Kresults[m[K.push_back({color, corners});
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:[m[K In member function ‘[01m[Kstd::vector<ArmorResult> ArmorDetector::detect(const cv::Mat&)[m[K’:
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp:142:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kresults[m[K’ was not declared in this scope
+  142 |     return [01;31m[Kresults[m[K;
+      |            [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/armor_detector_lib.dir/build.make:76：CMakeFiles/armor_detector_lib.dir/src/armor_detector.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:151：CMakeFiles/armor_detector_lib.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

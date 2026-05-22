@@ -1,0 +1,91 @@
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:2:1:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ does not name a type
+    2 | [01;31m[KMat[m[K src_copy = src.clone();
+      | [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:3:1:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ does not name a type
+    3 | [01;31m[KMat[m[K hsv_copy;
+      | [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:4:9:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+    4 | cvtColor[01;31m[K([m[Ksrc, hsv_copy, COLOR_BGR2HSV);
+      |         [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:6:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ does not name a type
+    6 | [01;31m[Kcout[m[K << "请点击图片中的灯条区域，按 ESC 退出" << endl;
+      | [01;31m[K^~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:7:12:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+    7 | namedWindow[01;31m[K([m[K"取色", WINDOW_NORMAL);
+      |            [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:8:7:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+    8 | imshow[01;31m[K([m[K"取色", src);
+      |       [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:11:16:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ does not name a type
+   11 | struct Param { [01;31m[KMat[m[K* src; Mat* hsv; };
+      |                [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:11:26:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ does not name a type
+   11 | struct Param { Mat* src; [01;31m[KMat[m[K* hsv; };
+      |                          [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:12:14:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc[m[K’ was not declared in this scope
+   12 | Param param{&[01;31m[Ksrc[m[K, &hsv_copy};
+      |              [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:12:20:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv_copy[m[K’ was not declared in this scope
+   12 | Param param{&src, &[01;31m[Khsv_copy[m[K};
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:[m[K In lambda function:
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:14:18:[m[K [01;31m[Kerror: [m[K‘[01m[KEVENT_LBUTTONDOWN[m[K’ was not declared in this scope
+   14 |     if (event == [01;31m[KEVENT_LBUTTONDOWN[m[K) {
+      |                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[KVec3b[m[K’ was not declared in this scope
+   16 |         [01;31m[KVec3b[m[K bgr = p->src->at<Vec3b>(y, x);
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ was not declared in this scope
+   17 |         [01;31m[KMat[m[K bgr_pixel(1,1,CV_8UC3, bgr);
+      |         [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:18:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Khsv_pixel[m[K’
+   18 |         Mat[01;31m[K [m[K[32m[Khsv_pixel[m[K;
+      |            [01;31m[K^[m[K[32m[K~~~~~~~~~[m[K
+      |            [32m[K;[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:19:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kbgr_pixel[m[K’ was not declared in this scope
+   19 |         cvtColor([01;31m[Kbgr_pixel[m[K, hsv_pixel, COLOR_BGR2HSV);
+      |                  [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:19:29:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv_pixel[m[K’ was not declared in this scope
+   19 |         cvtColor(bgr_pixel, [01;31m[Khsv_pixel[m[K, COLOR_BGR2HSV);
+      |                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:19:40:[m[K [01;31m[Kerror: [m[K‘[01m[KCOLOR_BGR2HSV[m[K’ was not declared in this scope
+   19 |         cvtColor(bgr_pixel, hsv_pixel, [01;31m[KCOLOR_BGR2HSV[m[K);
+      |                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcvtColor[m[K’ was not declared in this scope
+   19 |         [01;31m[KcvtColor[m[K(bgr_pixel, hsv_pixel, COLOR_BGR2HSV);
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:20:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Khsv[m[K’
+   20 |         Vec3b[01;31m[K [m[K[32m[Khsv[m[K = hsv_pixel.at<Vec3b>(0,0);
+      |              [01;31m[K^[m[K[32m[K~~~[m[K
+      |              [32m[K;[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+   21 |         [01;31m[Kcout[m[K << "坐标(" << x << "," << y << ")  BGR:("
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:22:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kbgr[m[K’ was not declared in this scope
+   22 |              << (int)[01;31m[Kbgr[m[K[0] << "," << (int)bgr[1] << "," << (int)bgr[2]
+      |                      [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:23:36:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv[m[K’ was not declared in this scope
+   23 |              << ")  HSV:(" << (int)[01;31m[Khsv[m[K[0] << "," << (int)hsv[1] << "," << (int)hsv[2] << ")" << endl;
+      |                                    [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:23:97:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+   23 |              << ")  HSV:(" << (int)hsv[0] << "," << (int)hsv[1] << "," << (int)hsv[2] << ")" << [01;31m[Kendl[m[K;
+      |                                                                                                 [01;31m[K^~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:15:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   15 |         Param* [01;35m[Kp[m[K = (Param*)userdata;
+      |                [01;35m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:[m[K At global scope:
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:26:17:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+   26 | setMouseCallback[01;31m[K([m[K"取色", onMouse, &param);
+      |                 [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:27:8:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+   27 | waitKey[01;31m[K([m[K0);
+      |        [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:28:20:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+   28 | destroyAllWindows()[01;31m[K;[m[K
+      |                    [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/hsv_check.cpp:29:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+   29 | [01;31m[Kreturn[m[K 0;  // 取色完直接退出
+      | [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hsv_check.dir/build.make:76：CMakeFiles/hsv_check.dir/src/hsv_check.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:193：CMakeFiles/hsv_check.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

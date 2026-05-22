@@ -1,0 +1,31 @@
+[0.006s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target step4_lightbars[0m
+[0.038s] [ 50%] Built target color_split
+[0.040s] [ 75%] [32mBuilding CXX object CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o[0m
+[0.566s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[0.566s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:60:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KMAX_ANGLE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[0.566s]    60 |     const float [01;35m[KMAX_ANGLE[m[K = 45.0f;          // 灯条倾斜角度上限（可根据实际情况放宽）
+[0.566s]       |                 [01;35m[K^~~~~~~~~[m[K
+[0.825s] [100%] [32m[1mLinking CXX executable step4_lightbars[0m
+[0.988s] [100%] Built target step4_lightbars
+[0.994s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[1.000s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect
+[1.004s] -- Install configuration: ""
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/lib/armor_detect/color_split
+[1.005s] -- Installing: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/lib/armor_detect/step4_lightbars
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/ament_index/resource_index/package_run_dependencies/armor_detect
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/ament_index/resource_index/parent_prefix_path/armor_detect
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/environment/ament_prefix_path.sh
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/environment/ament_prefix_path.dsv
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/environment/path.sh
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/environment/path.dsv
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/local_setup.bash
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/local_setup.sh
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/local_setup.zsh
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/local_setup.dsv
+[1.005s] -- Installing: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/package.dsv
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/ament_index/resource_index/packages/armor_detect
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/cmake/armor_detectConfig.cmake
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/cmake/armor_detectConfig-version.cmake
+[1.005s] -- Up-to-date: /home/r0bot/桌面/course/week3/ros2_ws/install/armor_detect/share/armor_detect/package.xml
+[1.007s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect

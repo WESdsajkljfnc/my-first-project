@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target step4_lightbars[0m
+[ 25%] Built target hsv_scan
+[ 50%] Built target color_split
+[ 75%] Built target hsv_check
+[ 87%] [32mBuilding CXX object CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o[0m

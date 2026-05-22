@@ -1,0 +1,18 @@
+[0.007s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target color_split[0m
+[0.075s] [ 50%] [32mBuilding CXX object CMakeFiles/color_split.dir/src/color_split.cpp.o[0m
+[0.740s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/color_split.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[0.740s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/color_split.cpp:47:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kassets[m[K’ was not declared in this scope; did you mean ‘[01m[Kassert[m[K’?
+[0.741s]    47 |     cv::imwrite([01;31m[Kassets[m[K + "red_mask_before_close.jpg", mask_red_before_close);
+[0.741s]       |                 [01;31m[K^~~~~~[m[K
+[0.741s]       |                 [32m[Kassert[m[K
+[0.743s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/color_split.cpp:47:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kmask_red_before_close[m[K’ was not declared in this scope
+[0.743s]    47 |     cv::imwrite(assets + "red_mask_before_close.jpg", [01;31m[Kmask_red_before_close[m[K);
+[0.743s]       |                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[0.745s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/color_split.cpp:48:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kmask_red_after_close[m[K’ was not declared in this scope
+[0.745s]    48 |     cv::imwrite(assets + "red_mask_after_close.jpg", [01;31m[Kmask_red_after_close[m[K);
+[0.745s]       |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.946s] gmake[2]: *** [CMakeFiles/color_split.dir/build.make:76：CMakeFiles/color_split.dir/src/color_split.cpp.o] 错误 1
+[0.946s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/color_split.dir/all] 错误 2
+[0.947s] gmake: *** [Makefile:146：all] 错误 2
+[0.948s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32

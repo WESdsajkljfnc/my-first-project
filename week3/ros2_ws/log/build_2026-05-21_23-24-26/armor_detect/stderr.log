@@ -1,0 +1,72 @@
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:132:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kbars[m[K’ was not declared in this scope; did you mean ‘[01m[Kbar[m[K’?
+  132 |         for (const auto& bar : [01;31m[Kbars[m[K) {
+      |                                [01;31m[K^~~~[m[K
+      |                                [32m[Kbar[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:136:22:[m[K [01;31m[Kerror: [m[K‘[01m[KdrawImg[m[K’ was not declared in this scope
+  136 |                 line([01;31m[KdrawImg[m[K, vertices[i], vertices[(i+1)%4], Scalar(255, 0, 0), 2);
+      |                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:137:20:[m[K [01;31m[Kerror: [m[K‘[01m[KdrawImg[m[K’ was not declared in this scope
+  137 |             circle([01;31m[KdrawImg[m[K, bar.center, 3, Scalar(0, 255, 255), -1);
+      |                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:141:17:[m[K [01;31m[Kerror: [m[K‘[01m[KdrawImg[m[K’ was not declared in this scope
+  141 |         putText([01;31m[KdrawImg[m[K, colorName + " LightBars: " + to_string(bars.size()),
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:141:26:[m[K [01;31m[Kerror: [m[K‘[01m[KcolorName[m[K’ was not declared in this scope
+  141 |         putText(drawImg, [01;31m[KcolorName[m[K + " LightBars: " + to_string(bars.size()),
+      |                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:141:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kbars[m[K’ was not declared in this scope
+  141 |         putText(drawImg, colorName + " LightBars: " + to_string([01;31m[Kbars[m[K.size()),
+      |                                                                 [01;31m[K^~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:[m[K At global scope:
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:148:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc[m[K’ was not declared in this scope
+  148 |     Mat draw_red = [01;31m[Ksrc[m[K.clone();
+      |                    [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:149:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc[m[K’ was not declared in this scope
+  149 |     Mat draw_blue = [01;31m[Ksrc[m[K.clone();
+      |                     [01;31m[K^~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:151:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kmask_red[m[K’ was not declared in this scope
+  151 |     vector<LightBar> redBars = processColor([01;31m[Kmask_red[m[K, "Red", draw_red);
+      |                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:151:32:[m[K [01;31m[Kerror: [m[K‘[01m[KprocessColor[m[K’ was not declared in this scope
+  151 |     vector<LightBar> redBars = [01;31m[KprocessColor[m[K(mask_red, "Red", draw_red);
+      |                                [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:152:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kmask_blue[m[K’ was not declared in this scope
+  152 |     vector<LightBar> blueBars = processColor([01;31m[Kmask_blue[m[K, "Blue", draw_blue);
+      |                                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:152:33:[m[K [01;31m[Kerror: [m[K‘[01m[KprocessColor[m[K’ was not declared in this scope
+  152 |     vector<LightBar> blueBars = [01;31m[KprocessColor[m[K(mask_blue, "Blue", draw_blue);
+      |                                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:155:12:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+  155 |     imwrite[01;31m[K([m[Kassets + "step4_lightbars_red.jpg", draw_red);
+      |            [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:156:12:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+  156 |     imwrite[01;31m[K([m[Kassets + "step4_lightbars_blue.jpg", draw_blue);
+      |            [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:158:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ does not name a type
+  158 |     [01;31m[Kcout[m[K << "红色灯条候选数: " << redBars.size() << endl;
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:159:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ does not name a type
+  159 |     [01;31m[Kcout[m[K << "蓝色灯条候选数: " << blueBars.size() << endl;
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:160:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ does not name a type
+  160 |     [01;31m[Kcout[m[K << "灯条筛选结果已保存" << endl;
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:163:11:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+  163 |     imshow[01;31m[K([m[K"Red LightBars", draw_red);
+      |           [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:164:11:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+  164 |     imshow[01;31m[K([m[K"Blue LightBars", draw_blue);
+      |           [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:165:12:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+  165 |     waitKey[01;31m[K([m[K0);
+      |            [01;31m[K^[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:167:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  167 |     [01;31m[Kreturn[m[K 0;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:168:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  168 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/step4_lightbars.dir/build.make:76：CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:169：CMakeFiles/step4_lightbars.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

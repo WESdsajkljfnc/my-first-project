@@ -1,0 +1,91 @@
+[0.000000] (-) TimerEvent: {}
+[0.000136] (armor_detect) JobQueued: {'identifier': 'armor_detect', 'dependencies': OrderedDict()}
+[0.000154] (armor_detect) JobStarted: {'identifier': 'armor_detect'}
+[0.004184] (armor_detect) JobProgress: {'identifier': 'armor_detect', 'progress': 'cmake'}
+[0.004601] (armor_detect) JobProgress: {'identifier': 'armor_detect', 'progress': 'build'}
+[0.005055] (armor_detect) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect', '--', '-j32', '-l32'], 'cwd': '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'r0bot'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/r0bot'), ('OLDPWD', '/home/r0bot'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1887'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/r0bot/桌面/course/week2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'r0bot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'r0bot'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/WP:@/tmp/.ICE-unix/1702,unix/WP:/tmp/.ICE-unix/1702'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b59673ce_2520_4d1f_be4a_775b6403367c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.207'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/r0bot/桌面/course/week2/ros2_ws/install/training_pkg:/opt/ros/humble')]), 'shell': False}
+[0.020580] (armor_detect) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.085884] (armor_detect) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.099582] (-) TimerEvent: {}
+[0.100160] (armor_detect) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.101359] (armor_detect) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.104356] (armor_detect) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.108967] (armor_detect) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.114931] (armor_detect) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.130521] (armor_detect) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.131183] (armor_detect) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.189346] (armor_detect) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.199669] (-) TimerEvent: {}
+[0.213844] (armor_detect) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.227833] (armor_detect) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.232147] (armor_detect) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.271042] (armor_detect) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.271219] (armor_detect) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/r0bot/\xe6\xa1\x8c\xe9\x9d\xa2/course/week3/ros2_ws/src/armor_detect/include\n'}
+[0.271274] (armor_detect) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.271653] (armor_detect) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.272358] (armor_detect) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.272411] (armor_detect) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.272546] (armor_detect) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.272898] (armor_detect) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.289486] (armor_detect) StdoutLine: {'line': b'-- Generating done\n'}
+[0.295128] (armor_detect) StdoutLine: {'line': b'-- Build files have been written to: /home/r0bot/\xe6\xa1\x8c\xe9\x9d\xa2/course/week3/ros2_ws/build/armor_detect\n'}
+[0.299692] (-) TimerEvent: {}
+[0.311007] (armor_detect) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target step4_lightbars\x1b[0m\n'}
+[0.311499] (armor_detect) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target step5_armor\x1b[0m\n'}
+[0.311553] (armor_detect) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hsv_scan\x1b[0m\n'}
+[0.311737] (armor_detect) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hsv_check\x1b[0m\n'}
+[0.311792] (armor_detect) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target color_split\x1b[0m\n'}
+[0.312047] (armor_detect) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target video_player\x1b[0m\n'}
+[0.316598] (armor_detect) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/armor_detector_lib.dir/src/armor_detector.cpp.o\x1b[0m\n'}
+[0.318886] (armor_detect) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o\x1b[0m\n'}
+[0.319312] (armor_detect) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/step5_armor.dir/src/step5_armor.cpp.o\x1b[0m\n'}
+[0.319875] (armor_detect) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/hsv_scan.dir/src/hsv_scan.cpp.o\x1b[0m\n'}
+[0.319967] (armor_detect) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/hsv_check.dir/src/hsv_check.cpp.o\x1b[0m\n'}
+[0.320008] (armor_detect) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/color_split.dir/src/color_split.cpp.o\x1b[0m\n'}
+[0.320100] (armor_detect) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/video_player.dir/src/video_player.cpp.o\x1b[0m\n'}
+[0.399788] (-) TimerEvent: {}
+[0.499968] (-) TimerEvent: {}
+[0.600065] (-) TimerEvent: {}
+[0.700149] (-) TimerEvent: {}
+[0.800232] (-) TimerEvent: {}
+[0.900340] (-) TimerEvent: {}
+[1.000452] (-) TimerEvent: {}
+[1.100584] (-) TimerEvent: {}
+[1.200755] (-) TimerEvent: {}
+[1.234138] (armor_detect) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable hsv_check\x1b[0m\n'}
+[1.239176] (armor_detect) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX executable video_player\x1b[0m\n'}
+[1.276858] (armor_detect) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable hsv_scan\x1b[0m\n'}
+[1.284993] (armor_detect) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable step4_lightbars\x1b[0m\n'}
+[1.289774] (armor_detect) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable color_split\x1b[0m\n'}
+[1.300835] (-) TimerEvent: {}
+[1.366144] (armor_detect) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable step5_armor\x1b[0m\n'}
+[1.376142] (armor_detect) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX static library libarmor_detector_lib.a\x1b[0m\n'}
+[1.400948] (-) TimerEvent: {}
+[1.401942] (armor_detect) StdoutLine: {'line': b'[ 87%] Built target armor_detector_lib\n'}
+[1.418162] (armor_detect) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/video_processor.dir/src/video_processor.cpp.o\x1b[0m\n'}
+[1.501064] (-) TimerEvent: {}
+[1.510286] (armor_detect) StdoutLine: {'line': b'[ 93%] Built target hsv_check\n'}
+[1.543883] (armor_detect) StdoutLine: {'line': b'[ 93%] Built target video_player\n'}
+[1.549500] (armor_detect) StdoutLine: {'line': b'[ 93%] Built target hsv_scan\n'}
+[1.576028] (armor_detect) StdoutLine: {'line': b'[ 93%] Built target step4_lightbars\n'}
+[1.601149] (-) TimerEvent: {}
+[1.624494] (armor_detect) StdoutLine: {'line': b'[ 93%] Built target color_split\n'}
+[1.624698] (armor_detect) StdoutLine: {'line': b'[ 93%] Built target step5_armor\n'}
+[1.701242] (-) TimerEvent: {}
+[1.801473] (-) TimerEvent: {}
+[1.901712] (-) TimerEvent: {}
+[1.991141] (armor_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/r0bot/\xe6\xa1\x8c\xe9\x9d\xa2/course/week3/ros2_ws/src/armor_detect/src/video_processor.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.991324] (armor_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/r0bot/\xe6\xa1\x8c\xe9\x9d\xa2/course/week3/ros2_ws/src/armor_detect/src/video_processor.cpp:35:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcould not convert \xe2\x80\x98\x1b[01m\x1b[Kcap.cv::VideoCapture::operator>>(frame)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kbool\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.991375] (armor_detect) StderrLine: {'line': b'   35 |         while (\x1b[01;31m\x1b[Kcap >> frame\x1b[m\x1b[K) {\n'}
+[1.991419] (armor_detect) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.991455] (armor_detect) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[1.991489] (armor_detect) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[Kcv::VideoCapture\x1b[m\x1b[K\n'}
+[2.001789] (-) TimerEvent: {}
+[2.101991] (-) TimerEvent: {}
+[2.200188] (armor_detect) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/video_processor.dir/build.make:76\xef\xbc\x9aCMakeFiles/video_processor.dir/src/video_processor.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.200389] (armor_detect) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:177\xef\xbc\x9aCMakeFiles/video_processor.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[2.200626] (armor_detect) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[2.202063] (-) TimerEvent: {}
+[2.202594] (armor_detect) CommandEnded: {'returncode': 2}
+[2.208551] (armor_detect) JobEnded: {'identifier': 'armor_detect', 'rc': 2}
+[2.218828] (-) EventReactorShutdown: {}

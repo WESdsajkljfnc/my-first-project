@@ -1,0 +1,23 @@
+[0.006s] Invoking command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
+[0.036s] [ 33%] Built target color_split
+[0.037s] [ 50%] [32mBuilding CXX object CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o[0m
+[0.037s] [ 83%] Built target hsv_check
+[0.570s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[0.570s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:36:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K([m[K’ token
+[0.570s]    36 |     inRange(hsv, Scalar[01;31m[K([m[K150, 20 100), Scalar(180, 255, 255), mask_red2);
+[0.570s]       |                        [01;31m[K^[m[K
+[0.570s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:36:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before numeric constant
+[0.570s]    36 |     inRange(hsv, Scalar[34m[K([m[K150, 20[01;31m[K [m[K[32m[K100[m[K), Scalar(180, 255, 255), mask_red2);
+[0.570s]       |                        [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~[m[K
+[0.570s]       |                                [32m[K)[m[K
+[0.570s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:40:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K([m[K’ token
+[0.570s]    40 |     inRange(hsv, Scalar[01;31m[K([m[K80,30 100), Scalar(115, 255, 255), mask_blue);
+[0.570s]       |                        [01;31m[K^[m[K
+[0.570s] [01m[K/home/r0bot/桌面/course/week3/ros2_ws/src/armor_detect/src/step4_lightbars.cpp:40:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before numeric constant
+[0.570s]    40 |     inRange(hsv, Scalar[34m[K([m[K80,30[01;31m[K [m[K[32m[K100[m[K), Scalar(115, 255, 255), mask_blue);
+[0.570s]       |                        [34m[K~[m[K     [01;31m[K^[m[K[32m[K~~~[m[K
+[0.570s]       |                              [32m[K)[m[K
+[0.779s] gmake[2]: *** [CMakeFiles/step4_lightbars.dir/build.make:76：CMakeFiles/step4_lightbars.dir/src/step4_lightbars.cpp.o] 错误 1
+[0.780s] gmake[1]: *** [CMakeFiles/Makefile2:167：CMakeFiles/step4_lightbars.dir/all] 错误 2
+[0.780s] gmake: *** [Makefile:146：all] 错误 2
+[0.781s] Invoked command in '/home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/r0bot/桌面/course/week3/ros2_ws/build/armor_detect -- -j32 -l32
