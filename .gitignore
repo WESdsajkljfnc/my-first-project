@@ -4,3 +4,6 @@ week2/ros2_ws/log/
 week3/ros2_ws/install/
 week3/ros2_ws/log/
 week3/ros2_ws/build/
+**/install/
+**/log/
+**/build/
