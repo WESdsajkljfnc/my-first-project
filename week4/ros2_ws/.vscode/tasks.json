@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build and launch all",
+            "type": "shell",
+            "command": "source /opt/ros/humble/setup.bash && source install/setup.bash && colcon build --packages-select armor_detect_ros && ros2 launch armor_detect_ros detect.launch.py",
+            "options": {
+                "cwd": "/home/r0bot/桌面/course/week4/ros2_ws"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

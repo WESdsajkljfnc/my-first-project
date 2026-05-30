@@ -1,0 +1,50 @@
+detect_node:
+  ros__parameters:
+    image_topic: "/image_raw"
+    debug: true
+
+    # 红色阈值第一段 (H, S, V)
+    red_h_low1: 0
+    red_s_low1: 50
+    red_v_low1: 50
+    red_h_high1: 20
+    red_s_high1: 255
+    red_v_high1: 255
+
+    # 红色阈值第二段
+    red_h_low2: 150
+    red_s_low2: 210
+    red_v_low2: 150
+    red_h_high2: 180
+    red_s_high2: 255
+    red_v_high2: 255
+
+    # 蓝色阈值
+    blue_h_low: 90
+    blue_s_low: 20
+    blue_v_low: 170
+    blue_h_high: 120
+    blue_s_high: 255
+    blue_v_high: 255
+
+    # 形态学核大小
+    red_open_kernel: 9
+    red_close_kernel: 30
+    blue_open_kernel: 2
+    blue_close_kernel: 5
+
+    # 灯条筛选
+    min_area: 30.0
+    min_length: 8.0
+    min_ratio: 1.5
+    max_ratio: 8.0
+    angle_tol: 45.0
+
+    # 灯条配对
+    max_angle_diff: 15.0
+    max_len_ratio: 1.8
+    min_dist_factor: 0.3
+    max_dist_factor: 5.0
+
+    # 框扩展比例
+    extend_ratio: 0.3

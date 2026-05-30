@@ -300,10 +300,192 @@ Assets中frames是对视频的抽帧，用来单独分析哪里出了问题
 
    
 
+## Week4
+-本周做了什么
+1. 复用 W3 的装甲板检测类， 拷贝 W3 类文件到本包
+	 1.创建头文件目录
+	mkdir -p include/armor_detect_ros
 
+	2. 拷贝头文件
+	cp ~/桌面/course/week3/ros2_ws/src/armor_detect/include/armor_detect/armor_detector.h \
+	   include/armor_detect_ros/
 
+	3. 拷贝实现文件
+	cp ~/桌面/course/week3/ros2_ws/src/armor_detect/src/armor_detector.cpp \
+	   src/
 
+	  后续需要在 CMakeLists.txt 中将 armor_detector.cpp 编译为库或直接与节点一起编译。
+2. config 和 launch 的作用
+config/（配置文件夹）
 
+存放参数文件（通常是 .yaml 格式）
+用途	举例
+保存可调参数	颜色阈值、形态学核大小、筛选条件
+保存话题名称	订阅哪个图像话题、发布结果的话题名
+保存调试开关	是否显示中间图像、是否保存调试视频
+修改参数无需重新编译	改完 YAML 文件重启 launch 即可生效
+
+好处：参数集中管理，换场景（不同相机、不同光线）只需改配置文件，不用动代码。
+
+launch/（启动文件夹）
+
+存放启动脚本（.launch.py 文件）
+用途	举例
+一次启动多个节点	同时启动相机驱动 + 检测节点
+自动加载参数	把 config/params.yaml 传入节点
+设置话题重映射	把相机发布的 /camera/image 映射到节点需要的 image_topic
+设置命名空间	方便多机器人系统区分
+
+好处：不用手动开多个终端 ros2 run，一条命令 ros2 launch 全搞定。
+
+3. 完全参数化的思路是：
+
+    在 ArmorDetector 类中添加对应的成员变量和 setter 函数。
+
+    修改 detect() 和相关函数，不再使用硬编码数字，而是使用这些成员变量。
+
+    在 detect_node.cpp 的构造函数中声明 ROS 参数，并在 loadParameters() 里调用 setter，把参数从 YAML 传给检测器。
+
+    在 config/params.yaml 中补上这些新参数，以后调参只改这个文件。
+
+-遇到的问题及解决
+
+1. 编译与链接错误
+
+    现象：编译时找不到 armor_detect/armor_detector.h，或 No executable found。
+
+    原因：W3 类文件拷贝到 W4 后路径变更，CMakeLists 未正确包含头文件或链接库。
+
+    解决：
+
+        将 #include "armor_detect/armor_detector.h" 改为 #include "armor_detect_ros/armor_detector.h"。
+
+        确保 CMakeLists.txt 中有 include_directories(include) 以及 target_link_libraries(detect_node armor_detector_lib ...)。
+
+2. YAML 参数不生效
+
+    现象：ros2 param get /detect_node angle_tol 返回 “Parameter not set” 或默认值。
+
+    原因：节点未声明参数，或 loadParameters() 中未调用对应的 setter，或者 detector_ 未构造就被调用。
+
+    解决：
+
+        在构造函数中用 this->declare_parameter<double>("angle_tol", 10.0); 声明所有参数。
+
+        先构造 detector_，再调用 loadParameters()，避免空指针。
+
+        确认 params.yaml 中的键名与代码完全一致，且缩进正确。
+
+3. 段错误 (Segmentation Fault)
+
+    现象：启动 detect_node 立即崩溃，终端显示 Segmentation fault。
+
+    原因：loadParameters() 被调用时 detector_ 尚未初始化（std::make_unique<ArmorDetector>() 在 loadParameters() 之后）。
+
+    解决：将 detector_ = std::make_unique<ArmorDetector>(); 移到 loadParameters(); 之前。
+
+4. 相机像素格式处理
+
+    现象：海康相机节点输出 “未处理的像素格式: 17301513”，/image_raw 全灰。
+
+    原因：相机原始格式非 BGR8 或 Mono8，代码中仅有这两种格式的判断。
+
+    解决：使用海康 SDK 的 MV_CC_ConvertPixelType 统一转换为 PixelType_Gvsp_BGR8_Packed。注意转换失败时必须释放原图缓冲：
+    cpp
+
+    MV_CC_FreeImageBuffer(handle_, &stImageInfo);
+
+5. 相机图像获取超时
+
+    现象：相机节点运行一段时间后频繁警告 “获取图像超时”，图像停止更新。
+
+    原因：① 转换失败时未释放图像缓存，导致相机内部队列阻塞；② 检测节点的密集计算占满 CPU，影响相机取流线程调度。
+
+    解决：
+
+        确保所有 return 前都释放了图像缓冲。
+
+        在 detect_node 的回调中加入帧率限制（每 100ms 处理一帧），降低 CPU 负载。
+
+        将相机定时器频率降为 10Hz（std::chrono::milliseconds(100)），取流超时设为 2000ms。
+
+6. 灯条过曝或画面闪烁
+
+    现象：灯条中心发白（HSV 中 S=0, V=255），无法取色；画面闪烁或出现紫红条纹。
+
+    原因：曝光时间太短（如 2ms）与交流光源频率不匹配，或环境光过强。
+
+    解决：
+
+        固定曝光时间为电网周期的整数倍，如 20000us (20ms)，并关闭自动曝光、自动增益、自动白平衡：
+        cpp
+
+        MV_CC_SetEnumValue(handle_, "ExposureAuto", 0);
+        MV_CC_SetEnumValue(handle_, "GainAuto", 0);
+        MV_CC_SetEnumValue(handle_, "BalanceWhiteAuto", 0);
+        MV_CC_SetFloatValue(handle_, "ExposureTime", 20000.0);
+
+        若仍过曝，进一步降低曝光或缩小光圈；若画面过暗，适当提高增益（如 3~8dB）。
+
+7. 灯条检测不到（角度/尺寸过滤过严）
+
+    现象：颜色掩膜正确，但装甲板框不出现，终端显示 “检测到 0 个装甲板”。
+
+    原因：灯条轻微倾斜或尺寸偏小，默认的 angle_tol: 10.0、min_area: 50.0 等参数过严。
+
+    解决：在 params.yaml 中放宽筛选参数，无需重新编译：
+    yaml
+
+    angle_tol: 45.0
+    min_area: 10.0
+    min_length: 5.0
+    min_ratio: 1.2
+    max_ratio: 15.0
+
+    重启检测节点即可生效。
+
+8. VS Code 开发环境配置
+
+    问题：代码中 #include "rclcpp/rclcpp.hpp" 标红，但终端编译正常。
+
+    解决：在 .vscode/c_cpp_properties.json 中配置递归包含路径：
+    json
+
+    "includePath": [
+        "${workspaceFolder}/**",
+        "/opt/ros/humble/**",
+        "/usr/include/opencv4",
+        "/opt/MVS/include"
+    ]
+
+    或生成 compile_commands.json 并添加 compileCommands 字段。
+
+9. 一键编译运行
+
+    问题：Ctrl+Shift+B 提示找不到包或可执行文件。
+
+    解决：创建 .vscode/tasks.json，在命令前加载 ROS 2 和环境：
+    json
+
+    "command": "source /opt/ros/humble/setup.bash && source install/setup.bash && colcon build --packages-select armor_detect_ros && ros2 launch armor_detect_ros detect.launch.py"
+
+10. 多节点管理
+
+    问题：需要手动分别启动相机、检测、显示节点。
+
+    解决：编写 launch 文件集成所有节点；或利用 VS Code 终端分屏，分别运行各节点。
+
+11. 取色与掩膜调试
+
+    问题：点击灯条过曝中心得到无效 HSV，无法设定阈值。
+
+    解决：降低曝光后点击灯条边缘；使用改进的 color_picker 节点，按 m 键可实时预览掩膜，辅助调整阈值范围。
+
+12. 相机驱动与 SDK 安装
+
+    问题：误装迈德威视驱动，后确认相机为海康 MV-CA013-21-UC，需使用海康 SDK。
+
+    解决：删除无用驱动，安装海康 MVS SDK (例如 MVS-5.0.1_x86_64_20260512.deb)，配置 udev 权限，直接调用 SDK 编写 hik_camera_node。
 
 
 

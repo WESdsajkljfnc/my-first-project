@@ -13,3 +13,4 @@ week3/ros2_ws/build/
 **/install/
 **/log/
 **/build/
+.vscode/
